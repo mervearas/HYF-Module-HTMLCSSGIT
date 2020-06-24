@@ -1,0 +1,348 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin:0;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+.whole{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.left{
+    width:20%;
+    height:100vh;
+    background-color:#ffb8b8;
+    box-sizing: border-box; 
+    float: left;
+    position: fixed;
+}
+
+.right{
+    width:80%;
+    float: right;
+    box-sizing: border-box; 
+}
+
+.photo img{
+    width:50%;
+    border-radius:50%;
+    margin-left:20%;
+    margin-top: 60%;
+    padding:0;  
+    border: 10px solid #ffcfcf;
+}
+
+.nav-bar ul{
+    list-style:none;
+    text-align: center;
+    margin-right: 17%;
+    margin-top: 15%;
+}
+
+.nav-bar ul li{
+    line-height:50px;
+    color:#ffeeee;
+    font-size: larger;
+    text-shadow:2px 1px 5px black;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color:#ffeeee;
+    text-shadow:2px 1px 5px black;
+}
+
+.nav-bar a:hover{
+    color: white;
+}
+
+.nav-bar ul li:hover{
+    color: white;
+}
+
+/* Summary */
+.summary{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.summary::before{
+    content: "";
+    background-image: url(images/park3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.summary h1{
+    font-family: 'Rock Salt', cursive;
+    color:black;
+    font-size: 7rem;
+    position: absolute;
+    left:200px;
+    top: 25%;
+    text-shadow: 100px 50px 100px white;
+}
+
+.summary-text{
+    background-color: #ffcfcf;
+    opacity: 0.7;
+    position: absolute;
+    top:60%;
+    padding:0 5%;
+    text-align: center;
+    text-shadow: 100px 50px 100px white;
+    background-color: #ffcfcf;
+    font-weight:bold;
+    padding-top: 5%;
+    margin:0 5%;
+    box-sizing: border-box;
+}
+
+/* Footer */
+#footer{
+    width:100%;
+    text-align:center;
+}
+  
+#footer a img {
+    width:60px;
+    height:60px;
+}
+  
+/* Skills */
+.skills{
+    /* width:100%; */
+    height:100vh;
+    padding-left:7%;
+    padding-top: 2%;
+    box-sizing: border-box; 
+}
+
+.skills ul{
+    list-style: none;
+    line-height: 35px;
+}
+
+.skills h1{
+    font-weight: bolder;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:50px;
+    margin-bottom: 5%;
+    text-shadow:2px 2px 3px gray;
+}
+
+.computer-skills i{
+    font-size:96px;
+}
+
+.computer-skills ul li{
+    display:inline;
+}
+
+.languages h3{   
+    color:rgb(146, 206, 146);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:25px;
+}
+
+.languages{
+    margin-bottom: 3%;
+}
+
+.computer-skills h3{
+    color:rgb(146, 206, 146);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+
+.computer-skills{
+    margin-bottom: 3%;
+
+}
+
+.soft-skills h3{
+    color:rgb(146, 206, 146);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+
+/* Portfolio */
+.portfolio{
+    height:100vh;
+    padding-top: 5%;
+    padding-left:7%;
+}
+
+.portfolio h1{
+    font-size:50px;
+    font-weight: bolder;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow:2px 2px 3px gray;
+}
+
+.portfolio-item{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding-top: 15%;
+    backface-visibility: hidden;
+}   
+
+.veganish{
+    position: relative;
+}
+
+.veganish:hover{
+  opacity:0.7;
+  transition: .5s ease;
+}
+
+.veganish:hover .veganish-title{
+    display: block;
+}
+
+.veganish-title{
+    position: absolute;
+    top: 30%;
+    left:40%;
+    display: none;
+    border: 3px solid gray;
+    font-size: 2rem;
+    background-color:#ffc179;
+    text-align: center;
+}
+
+.resume{
+    position: relative;
+}
+
+.resume:hover{
+    opacity:0.7;
+    transition: .5s ease;
+}
+
+.resume-title{
+    position: absolute;
+    top: 30%;
+    left:40%;
+    font-size: 2rem;
+    display: none;
+    text-align: center;
+    background-color:#ffb8b8;
+    border: 3px solid gray;
+}
+
+.resume:hover .resume-title{
+    display: block;
+}
+
+/* Experience */
+.experience{
+    height:100vh;
+    padding-top:7%;
+}
+
+.experience-item{
+    display:flex;
+    flex-direction: row;
+}
+
+.experience-description{
+    flex: 5;
+    padding-left:7%;
+}
+
+.experience-date{
+    flex: 2;
+    text-align: center;
+    color:#ffb8b8;
+}
+
+#experience-title{
+    padding-left:7%;
+    padding-bottom:6%;
+    font-weight: bolder;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:50px;
+    text-shadow:2px 2px 3px gray;
+}
+
+.experience-item h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:30px;
+    line-height: 1px;
+}
+
+.experience-item h3{
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:rgb(146, 206, 146);
+}
+
+.experience-description p{
+    line-height: 40px;
+}
+
+/* Education */
+.education{
+    height:100vh;
+    padding-top: 7%;
+}
+
+.edu-item{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:8%;  
+}
+
+.edu-description{
+    flex: 5;
+    padding-left:7%;
+}
+
+.edu-date{
+    flex: 2;
+    text-align: center;
+    color:#ffb8b8;
+}
+
+#edu-title{
+    padding-left:7%;
+    padding-bottom:6%;
+    font-weight: bolder;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:50px;
+    text-shadow:2px 2px 3px gray;
+}
+
+.edu-item h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:30px;
+    line-height: 1px;
+}
+
+.edu-item h3{
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:rgb(146, 206, 146);
+}
+
+.edu-description p{
+    line-height:40px;
+}
