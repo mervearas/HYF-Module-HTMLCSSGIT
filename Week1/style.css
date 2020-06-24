@@ -114,13 +114,13 @@ body{
     box-sizing: border-box;
 }
 
-/* Footer */
-#footer{
+/* Social Media */
+#social-media{
     width:100%;
     text-align:center;
 }
   
-#footer a img {
+#social-media a img {
     width:60px;
     height:60px;
 }
