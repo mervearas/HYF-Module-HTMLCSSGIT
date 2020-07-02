@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     width:100%;
     background-color:#4a3123 ;
+    font-size:16px;
 }
 
 header{ 
@@ -20,7 +21,7 @@ header{
 }
 
 h1{
-    font-size: 90px;
+    font-size: 5.625rem;
     left: 34%;
     top: 47%;
     position: absolute;
@@ -30,7 +31,7 @@ h1{
 }
 
 h2{
-    font-size:25px;
+    font-size:1.5625rem;
     margin-left:3%;
     color:#dd9e79;
     text-shadow:2px 2px 2px black;
@@ -38,9 +39,8 @@ h2{
 }
 
 h3{
-    font-size:22px;
+    font-size:1.375rem;
     font-family: monospace; 
-    font-weight: 900px;
 }
 
 p{
@@ -131,9 +131,11 @@ p{
         width:48%;
         margin:1%;
     }
+
     #grid-floats li:first-child img{
         width:60%;
     }
+
     #grid-floats{
         padding:1%;
     }
@@ -142,9 +144,11 @@ p{
     #grid-flex li:first-child{
         width:48%;
     }
+
     #grid-flex li:first-child img{
         width:60%;
     }
+
     #grid-flex{
         padding:1%;
     }
@@ -153,15 +157,20 @@ p{
 /* For Phones */
 @media (max-width: 600px) {
     header h1{
-        font-size: 42px;
+        font-size: 2.625rem;
         left:23%;
         top:49%;
+    }
+
+    h2{
+        font-size: 1rem;
     }
 
     /* grid-floats */
     #grid-floats li{
         width:98%;
     }
+    
     #grid-floats{
         padding:1%;
     }
@@ -170,6 +179,7 @@ p{
     #grid-flex li{
         width:98%;
     }
+
     #grid-flex{
         padding:1%;
     }
@@ -178,7 +188,7 @@ p{
 /* For Tablets */
 @media screen and (max-width: 1024px) and (min-width: 600px){
     header h1{
-        font-size: 60px;
+        font-size:3.75rem;
         left:30%;
         top:45%;
     }
@@ -187,28 +197,38 @@ p{
     #grid-floats li{
         width:31%;
     }
+
     #grid-floats li:nth-child(-n + 2){
         width:48%;
     }
+
     #grid-floats{
         padding:1%;
+    }
+
+    #grid-floats li:hover {
+        background-color:#dd9e79;  
+        color:white;
+        border-radius: 20%;  
     }
 
     /* grid-flex */
     #grid-flex li{
         width:31%;
     }
+
     #grid-flex li:nth-child(-n + 2){
         width:48%;
     }
+
     #grid-flex{
         padding:1%;
     }
 }
-/* Extra */
+
 @media screen and (max-width:1339px) and (min-width:1023px){
     header h1{
-        font-size: 80px;
+        font-size: 5rem;
         left:30%;
         top:43%;
     }
