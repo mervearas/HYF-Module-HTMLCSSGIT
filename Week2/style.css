@@ -33,7 +33,7 @@ h1 {
     position: absolute;
     font-family: 'Press Start 2P', cursive;
     color:#602f2f;
-    filter: drop-shadow(4px 4px 4px black);
+    text-shadow: 5px 5px 5px black;
 }
 
 h2 {
@@ -73,7 +73,7 @@ p {
     padding: 2%;
     text-align:center;
     border-radius: 3%;
-    filter: drop-shadow(3px 3px 3px#dd9e79);
+    box-shadow: 4px 4px 4px #dd9e79;
     background-color: white;  
     overflow: auto;
     color:#602f2f;
@@ -111,7 +111,7 @@ p {
     padding:2%;
     text-align:center;
     border-radius: 3%;
-    filter: drop-shadow(3px 3px 3px#dd9e79);
+    box-shadow: 4px 4px 4px #dd9e79;
     background-color: white;  
     overflow: auto;
     color:#602f2f;
