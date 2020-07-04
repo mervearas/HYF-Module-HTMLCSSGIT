@@ -1,7 +1,7 @@
 /* Google Fonts-Font Face */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
+body {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body{
     font-size:16px;
 }
 
-header{ 
+header { 
     background-image: url(background.jpg);
     height:500px;
     width:100%;
@@ -20,7 +20,7 @@ header{
     position: relative;
 }
 
-h1{
+h1 {
     font-size: 5.625rem;
     left: 34%;
     top: 47%;
@@ -30,7 +30,7 @@ h1{
     filter: drop-shadow(4px 4px 4px black)
 }
 
-h2{
+h2 {
     font-size:1.5625rem;
     margin-left:3%;
     color:#dd9e79;
@@ -38,19 +38,19 @@ h2{
     font-family: 'Press Start 2P', cursive;
 }
 
-h3{
+h3 {
     font-size:1.375rem;
     font-family: monospace; 
 }
 
-p{
+p {
     font-weight: bold;
     font-style: italic;
     font-family: fantasy;
 }
 
 /* GRID-FLOATS */
-#grid-floats{
+#grid-floats {
     box-sizing: border-box;
     float: left;
     width:100%;
@@ -82,12 +82,12 @@ p{
     border-radius: 20%;   
 }
 
-#grid-floats img{
+#grid-floats img {
     width:75%;
 }
 
 /* FLEXBOX */
-#grid-flex{
+#grid-flex {
     box-sizing: border-box;
     width:100%;
     display: flex;
@@ -119,7 +119,7 @@ p{
     border-radius: 20%;  
 }
 
-#grid-flex img{
+#grid-flex img {
     width:75%;
 }
 
@@ -127,29 +127,29 @@ p{
 /* For Desktop */
 @media (min-width: 1024px) {
     /* grid-floats */
-    #grid-floats li:first-child{
+    #grid-floats li:first-child {
         width:48%;
         margin:1%;
     }
 
-    #grid-floats li:first-child img{
+    #grid-floats li:first-child img {
         width:60%;
     }
 
-    #grid-floats{
+    #grid-floats {
         padding:1%;
     }
 
     /* grid-flex */
-    #grid-flex li:first-child{
+    #grid-flex li:first-child {
         width:48%;
     }
 
-    #grid-flex li:first-child img{
+    #grid-flex li:first-child img {
         width:60%;
     }
 
-    #grid-flex{
+    #grid-flex {
         padding:1%;
     }
 }
@@ -162,47 +162,47 @@ p{
         top:49%;
     }
 
-    h2{
+    h2 {
         font-size: 1rem;
     }
 
     /* grid-floats */
-    #grid-floats li{
+    #grid-floats li {
         width:98%;
     }
     
-    #grid-floats{
+    #grid-floats {
         padding:1%;
     }
 
     /* grid-flex */
-    #grid-flex li{
+    #grid-flex li{ 
         width:98%;
     }
 
-    #grid-flex{
+    #grid-flex {
         padding:1%;
     }
 }
 
 /* For Tablets */
-@media screen and (max-width: 1024px) and (min-width: 600px){
-    header h1{
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    header h1 {
         font-size:3.75rem;
         left:30%;
         top:45%;
     }
 
     /* grid-floats */
-    #grid-floats li{
+    #grid-floats li {
         width:31%;
     }
 
-    #grid-floats li:nth-child(-n + 2){
+    #grid-floats li:nth-child(-n + 2) {
         width:48%;
     }
 
-    #grid-floats{
+    #grid-floats {
         padding:1%;
     }
 
@@ -213,33 +213,33 @@ p{
     }
 
     /* grid-flex */
-    #grid-flex li{
+    #grid-flex li {
         width:31%;
     }
 
-    #grid-flex li:nth-child(-n + 2){
+    #grid-flex li:nth-child(-n + 2) {
         width:48%;
     }
 
-    #grid-flex{
+    #grid-flex {
         padding:1%;
     }
 }
 
-@media screen and (max-width:1339px) and (min-width:1023px){
-    header h1{
+@media screen and (max-width:1339px) and (min-width:1023px) {
+    header h1 {
         font-size: 5rem;
         left:30%;
         top:43%;
     }
 
     /* grid-floats */
-    #grid-floats{
+    #grid-floats {
         padding:1%;
     }
 
     /* grid-flex */
-    #grid-flex{
+    #grid-flex {
         padding:1%;
     }
 }
