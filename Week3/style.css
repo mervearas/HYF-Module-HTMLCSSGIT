@@ -216,9 +216,10 @@ main {
   padding-top: 4rem;
 }
 
-.photos {
+.register__photos {
   position: relative;
   width: 65%;
+  z-index: -1;
 }
 
 .pic,
@@ -259,7 +260,7 @@ main {
   width: 66%;
 }
 
-.photos h1 {
+.register__photos h1 {
   background-color: #6400e4;
   width: 40%;
   color: white;
@@ -343,6 +344,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2%;
 }
 
 .step-container span {
@@ -373,6 +375,7 @@ main {
 .step-content {
   display: flex;
   flex-direction: column;
+  padding: 0 3%;
 }
 
 .step-content h2 {
@@ -450,7 +453,8 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
-  padding: 1% 7%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
   width: 100%;
   box-sizing: border-box;
   align-items: flex-end;
@@ -491,6 +495,7 @@ main {
   margin-left: 0;
   font-size: 1rem;
   font-weight: bold;
+  flex: auto;
 }
 
 /* Main: Start Investing */
@@ -618,6 +623,10 @@ ul {
   color: black;
 }
 
+.site-map h3 {
+  font-weight: 500;
+}
+
 .codecademy span {
   font-size: 1.5rem;
   padding: 3px;
@@ -647,34 +656,44 @@ ul {
   white-space: nowrap;
 }
 
+.footer-left a {
+  text-decoration: none;
+  color: #4b35ef;
+}
+
+.footer-left .divider:after {
+  content: '|';
+  font-weight: 600;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
-    .triangle {
-        width: 68%;
-        top: 32%;
-        left:9%;
-    }
+  .triangle {
+    width: 68%;
+    top: 32%;
+    left: 9%;
+  }
 
-    .square {
-        left: 60%
-    }
+  .square {
+    left: 60%;
+  }
 
-    .menu-bar {
-        left: 9%;
-    }
+  .menu-bar {
+    left: 9%;
+  }
 
-    .pic {
-        top: 17%;
-        left: 17%;
-        width: 73%;
-    }
+  .pic {
+    top: 17%;
+    left: 17%;
+    width: 73%;
+  }
 
-    .photos h1 {
-        font-size: 1.6rem;
-        left: 5%;
-        top: 58%;
-    }
+  .register__photos h1 {
+    font-size: 1.6rem;
+    left: 5%;
+    top: 58%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -705,7 +724,7 @@ ul {
     margin-right: 5%;
   }
 
-  .photos {
+  .register__photos {
     width: 55%;
   }
 
@@ -738,7 +757,7 @@ ul {
     width: 56%;
   }
 
-  .photos h1 {
+  .register__photos h1 {
     font-size: 1.7rem;
     left: 5%;
     top: 44%;
@@ -758,12 +777,12 @@ ul {
     visibility: hidden;
   }
 
-  .photos {
+  .register__photos {
     width: 45%;
   }
 
-  .photos h1 {
-      font-size: 1.3rem;
+  .register__photos h1 {
+    font-size: 1.3rem;
   }
 
   .contact {
@@ -834,7 +853,7 @@ ul {
     padding: 3%;
   }
 
-  .photos {
+  .register__photos {
     display: none;
   }
 
@@ -898,6 +917,7 @@ ul {
 
   .step-container h1 {
     padding: 5%;
+    font-size: 2rem;
   }
 
   .step-content {
